@@ -1,0 +1,33 @@
+{% extends "nav.html" %}
+
+{% block content %}
+
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Complaint Submitted</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Your custom CSS styles here */
+        body {
+            padding-top: 0px;
+        }
+        .confirmation {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Complaint Submitted</h1>
+        <p class="confirmation">Your complaint has been submitted successfully!</p>
+        <a href="{% url 'complaint_list' %}" class="btn btn-primary">View Complaint List</a>
+    </div>
+</body>
+</html>
+
+
+{% endblock %}
